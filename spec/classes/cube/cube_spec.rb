@@ -3,6 +3,9 @@ require 'spec_helper'
 describe 'cube', :type => :class do
 
   context 'no parameters' do
+
+    let(:facts) { {:operatingsystem => 'Debian'} }
+
     it { should contain_package('cube').with_provider('npm').with_ensure('latest')}
     it { should create_class('cube::config')}
     it { should create_class('cube::install')}

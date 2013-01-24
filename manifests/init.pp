@@ -8,6 +8,9 @@ class cube(
   $mongo_username = $cube::params::mongo_username,
   $mongo_password = $cube::params::mongo_password
 ) inherits cube::params {
+
+  require 'nodejs'
+
   class{'cube::install': } ->
   class{'cube::config': } ~>
   class{'cube::service': } ->
