@@ -1,0 +1,6 @@
+fixtures:
+  repositories:
+    nodejs: git://github.com/puppetlabs/puppetlabs-nodejs.git
+    mongodb: git://github.com/puppetlabs/puppetlabs-mongodb.git
+  symlinks:
+    cube: "#{source_dir}"
