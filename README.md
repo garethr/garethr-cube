@@ -17,6 +17,7 @@ following is an exampe also showing the default values, based on those
 in the npm package.
 
     class { 'cube':
+      cube_source         => 'cube' # default npm module; can be overridden with tarball url
       collector_http_port => 1080,
       collector_udp_port  => 1180,
       evaluator_port      => 1081,

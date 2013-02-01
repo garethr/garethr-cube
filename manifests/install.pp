@@ -1,6 +1,7 @@
 class cube::install {
   package { 'cube':
-    ensure   => 'latest',
+    ensure   => present,
+    source   => $cube::cube_source,
     provider => npm,
   }
 }
