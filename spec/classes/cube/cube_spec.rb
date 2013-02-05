@@ -34,5 +34,10 @@ describe 'cube', :type => :class do
       let(:params) { {:collector_http_port => 8990} }
       it { should contain_file('/usr/local/lib/node_modules/cube/bin/collector-config.js').with_content(/8990/)}
     end
+
+    context 'cube_source parameter set' do
+      let(:params) { {:cube_source => 'https://github.com/square/cube/archive/master.tar.gz'} }
+      it { should contain_package('cube').with_provider('npm').with_ensure('present')}
+    end
   end
 end
