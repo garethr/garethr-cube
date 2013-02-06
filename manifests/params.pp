@@ -1,4 +1,5 @@
 class cube::params {
+  $cube_source = 'cube'
   $collector_http_port = '1080'
   $collector_udp_port = '1180'
   $evaluator_port = '1081'
