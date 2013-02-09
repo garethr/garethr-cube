@@ -1,5 +1,5 @@
 name 'garethr-cube'
-version '0.0.1'
+version '0.1.0'
 author 'Gareth Rushgrove <gareth@morethanseven.net>'
 license 'Apache 2.0'
 
